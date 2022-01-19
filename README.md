@@ -12,3 +12,7 @@ venv\scripts\activate
 8. paste all the text files in the same folder
 9. and create all the HTML files for jinja template in templates folder
 10. pip install jinja
+11. for execution 
+python3 <file_name>
+ex-
+python3 app.py
