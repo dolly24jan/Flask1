@@ -5,7 +5,7 @@
 4. cd FlaskTest
 5. To activate corresponding environment, on Linux/OS X, use the following −
  source venv/bin/activate
-On Windows, following can be used
+. On Windows, following can be used
 venv\scripts\activate
 6. pip install Flask
 7. create app.py file
