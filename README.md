@@ -1,6 +1,6 @@
 # Flask1
 1. create a folder where we want to make an application
-2. Install virtualenv python3 package using command ###### "sudo pip3 install virtualenv"
+2. Install virtualenv python3 package using command # "sudo pip3 install virtualenv"
 3. mkdir FlaskTest
 4. cd FlaskTest
 5. create virtual environment for the application using "virtualenv venv"
