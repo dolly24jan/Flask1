@@ -2,6 +2,12 @@ from flask import Flask,render_template,request,jsonify
 import os
 import codecs
 app= Flask(__name__)
+"""
+    1. this API used for reading files by default
+    2. this Api used for reading files from by default start line number to ending line number 
+    3. this API used for reading files from start line number(entered by user) and takes by default ending line number
+    4. this API uised for reading files from start line number to ending line number(both entered by user) 
+"""
 @app.route('/', defaults={'file_name': "file1.txt",'start_line_no': "0",'end_line_no':"150"}, methods=['GET'])
 @app.route('/<file_name>',defaults={'start_line_no': "0", 'end_line_no':"150"}, methods=['GET'])
 @app.route('/<file_name>/<start_line_no>',defaults={'end_line_no':"150"}, methods=['GET'])
