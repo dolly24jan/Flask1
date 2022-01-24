@@ -93,11 +93,7 @@ def user(file_name,start_line_no,end_line_no):
                 # return jsonify(contents)
                 return render_template("index2.html", content=contents)
         else:
-            # with codecs.open("file1.txt",'r') as file:
-            with open('file1.txt','r') as file:
-                contents = file.read()
-                # return jsonify(contents)
-            return render_template("index2.html", content=contents)
+            return {"status":False,"message":"Invalid File Name...Please enter existing file name"}
 
     except Exception as e:
         return {"status":False,"message":"Not displayed due to :"+str(e)}
